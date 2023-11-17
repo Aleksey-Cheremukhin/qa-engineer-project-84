@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта страница магазина
   test-data: |
-    Ключевое слово = glasses
+    Ключевое слово = glass
   steps:
     - Вводим в окно поиска ключевое слово
   expected-result: |
