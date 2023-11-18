@@ -31,7 +31,7 @@
     Некорректо отображается сайт на мобильных устройствах
   environment: |
     Iphone SE
-    Iphone 14 Pro Max
+    Iphone 12 Pro
     iPad mini
     Surface Duo
   steps-to-reproduce: |
