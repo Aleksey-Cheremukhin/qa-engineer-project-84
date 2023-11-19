@@ -4,63 +4,63 @@ test-cases:
     Проверка поиска товаров по ключевому слову
   status: pass
 
-- summary: |
+  - summary: |
     Проверка поиска товаров по категории
   status: pass
 
-- summary: |
+  - summary: |
     Проверка фильтрации товаров по бренду
   status: pass
 
-- summary: |
+  - summary: |
     Проверка фильтрации товаров по наличию
   status: pass
 
-- summary: |
+  - summary: |
     Проверка фильтрации товаров по цене
   status: pass
 
-- summary: |
+  - summary: |
     Проверка перехода списка товаров на следующую страницу
   status: pass
 
-- summary: |
+  - summary: |
     Проверка перехода списка товаров на предыдущую страницу
   status: pass
 
-- summary: |
+  - summary: |
     Пользователь может просматривать подробное описание товара и фотографии товара
   status: pass
 
-- summary: |
+  - summary: |
     Проверка добавления товара в корзину из общего списка
   status: pass
 
-- summary: |
+  - summary: |
     Проверка добавления товара в корзину из карточки товара
   status: pass
 
-- summary: |
+  - summary: |
     Проверка удаления товара из корзины
   status: pass
 
-- summary: |
+  - summary: |
     Проверка оформления заказа
   status: pass
 
-- summary: |
+  - summary: |
     Проверка передачи заказа на сервер
   status: fail
 
-- summary: |
+  - summary: |
     Проверка мобильной версии сайта
   status: fail
 
-- summary: |
+  - summary: |
     Проверка переключения языка на русский
   status: fail
 
-- summary: |
+  - summary: |
     Проверка открытия в разных браузерах
   status: pass
 
@@ -80,7 +80,7 @@ bugreports:
   actual-result: |
     На панели Network в консоли браузера DevTools отображается статус 500 filed в ответе сервера (скрин Заказ.png)
 
-- summary: |
+  - summary: |
     Не работает переключение языка интерфейса сайта на русский язык
   environment: |
     Яндекс Браузер 23.9.3.931 (64-bit)
@@ -93,7 +93,7 @@ bugreports:
   actual-result: |
     Названия товаров и характеристика товаров не меняет язык на русский (скрин язык.png)
 
-- summary: |
+  - summary: |
     Некорректо отображается сайт на мобильных устройствах
   environment: |
     Iphone SE
