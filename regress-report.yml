@@ -3,7 +3,6 @@ test-cases:
   - summary: |
     Проверка поиска товара по ключевому слову
   status: pass
-
   - summary: |
     Проверка поиска товара по каттегории
   status: fail
