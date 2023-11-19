@@ -1,5 +1,5 @@
 ---
-test-cases:
+test-cases: |
   - summary: |
     Проверка фильтрации товаров по ключевому слову
   status: pass
@@ -68,7 +68,7 @@ test-cases:
     Пользователь может просматривать и увеличивать фотографии товара
   status: pass  
 
-bugreports:
+bugreports: |
   - summary: |
     Не работает поиск товаров по категории
   environment: |
