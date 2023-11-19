@@ -66,12 +66,44 @@ test-cases:
 
 bugreports:
   - summary: |
-      Короткое описание ошибки
-    environment: |
-      Ссылка на билд/коммит/версия ПО и всего окружения
-    steps-to-reproduce: |
-      Полный перечень шагов для воспроизведения и описание, на каком шаге произошла ошибка
-    expected-result: |
-      Какой результат должен был быть без ошибки
-    actual-result: |
-      Какой результат получился на самом деле
+    Не работает передачи заказа на сервер
+  environment: |
+    Яндекс Браузер 23.9.3.931 (64-bit)
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
+    2. Добавить в корзину любой товар
+    3. Перейти в корзину
+    4. Открыть консоль браузера Devtools
+    5. Нажать кнопку Checkout (Оформить заказ)
+  expected-result: |
+    На панели Network в консоли браузера DevTools отображается статус 200 ok в ответе сервера
+  actual-result: |
+    На панели Network в консоли браузера DevTools отображается статус 500 filed в ответе сервера (скрин Заказ.png)
+
+- summary: |
+    Не работает переключение языка интерфейса сайта на русский язык
+  environment: |
+    Яндекс Браузер 23.9.3.931 (64-bit)
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
+    2. Нажать кнопу language
+    3. Выбрать русский язык
+  expected-result: |
+    Все элементы интерфейса магазина переведены на русский язык
+  actual-result: |
+    Названия товаров и характеристика товаров не меняет язык на русский (скрин язык.png)
+
+- summary: |
+    Некорректо отображается сайт на мобильных устройствах
+  environment: |
+    Iphone SE
+    Iphone 12 Pro
+    iPad mini
+    Surface Duo
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/ с мобильных устройств из списка environment
+    2. Проверить корректное отображение сайта, вестку
+  expected-result: |
+    Верстка сайта корректно отображается на всех устройствах
+  actual-result: |
+    Верстка сайта не корректно отображается на всех устройствах (скрины IphoneSE.png, Iphone12Pro.png, iPad mini.png, Surface Duo.png)
