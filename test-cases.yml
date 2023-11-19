@@ -200,35 +200,35 @@
 
 - summary: | 
       Проверка переключения языка на русский
-    requirement: |
+  requirement: |
       Пользователь может перевести страницу магазина на русский язык
-    prerequisites: |
+  prerequisites: |
       Открыта страница магазина
       Язык интерфейса английский
-    test-data: |
+  test-data: |
       Язык интерфейса русский
-    steps:
+  steps:
       - Нажать кнопку Languge
       - Нажать кнопку Rusiian
-    expected-result: |
+  expected-result: |
       Все элементы интерфейса магазина переведены на русский язык
 
 - summary: | 
       Проверка открытия в разных браузерах 
-    requirement: |
+  requirement: |
       Страница магазина должна открываться в последних версиях разных браузеров
-    prerequisites: 
+  prerequisites: 
       Открыт сайт https://live.browserstack.com/
       Авторизация в Browser Stack выполнена
       Введен URL сайта магазина
-    test-data: |
+  test-data: |
       Браузеры = Safari, Opera, Chrome, Yandex, Firefox, Edge, Internet Explorer
-    steps:
+  steps:
       - Нажать Преключить браузер
       - Выбрать последнюю версию браузера из списка
       - Проверяем корректное отображение сайта
       - Проверяем работоспособность кнопок на сайте
-    expected-result: |
+  expected-result: |
       Страница магазина корректно отображается во всех браузерах, весь функционал работает
             
 - summary: |
