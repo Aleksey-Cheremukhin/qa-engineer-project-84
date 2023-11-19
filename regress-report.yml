@@ -6,7 +6,7 @@ test-cases:
 
   - summary: |
     Проверка поиска товаров по категории
-  status: pass
+  status: fail
 
   - summary: |
     Проверка фильтрации товаров по бренду
@@ -14,7 +14,7 @@ test-cases:
 
   - summary: |
     Проверка фильтрации товаров по наличию
-  status: pass
+  status: fail
 
   - summary: |
     Проверка фильтрации товаров по цене
